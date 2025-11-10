@@ -56,6 +56,8 @@ rm -rf feeds/packages/net/ariang
 rm -rf feeds/packages/net/frp
 rm -rf feeds/packages/lang/golang
 rm -rf tools/cmake
+# remove v2ray-geodata package from feeds (openwrt-22.03 & master)
+rm -rf feeds/packages/net/v2ray-geodata
 
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
@@ -85,6 +87,9 @@ git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-a
 git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone --depth=1 https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
 git clone --depth=1 https://github.com/NONGFAH/luci-app-athena-led package/luci-app-athena-led
+git clone https://github.com/EasyTier/luci-app-easytier.git /opt/luci-app-easytier
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app-athena-led/root/usr/sbin/athena-led
 
 ./scripts/feeds update -a
