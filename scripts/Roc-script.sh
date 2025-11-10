@@ -87,7 +87,7 @@ git clone --depth=1 https://github.com/tty228/luci-app-wechatpush package/luci-a
 git clone --depth=1 https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone --depth=1 https://github.com/lwb1978/openwrt-gecoosac package/openwrt-gecoosac
 git clone --depth=1 https://github.com/NONGFAH/luci-app-athena-led package/luci-app-athena-led
-git clone --depth=1 https://github.com/EasyTier/luci-app-easytier.git /opt/luci-app-easytier
+git clone --depth=1 https://github.com/EasyTier/luci-app-easytier.git package/luci-app-easytier
 git clone --depth=1 https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone --depth=1 https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 chmod +x package/luci-app-athena-led/root/etc/init.d/athena_led package/luci-app-athena-led/root/usr/sbin/athena-led
